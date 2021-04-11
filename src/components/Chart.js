@@ -1,7 +1,5 @@
 import React, { useEffect, useRef } from 'react'
-// import chartXKCD from 'chart.xkcd'
 import chartXKCD from '../../vendor/chart.xkcd/src/index'
-import scaleTime from 'd3-scale/src/time'
 
 function Chart (props) {
   const ref = useRef(null)

@@ -51,9 +51,7 @@ function App (props) {
           </tbody>
         </table>
 
-        {lastAntibody ? (
-          <Chart title='Antibody Timeline' data={data} />
-        ) : ''}
+        <Chart title='Antibody Timeline' data={data} />
       </div>
 
       <div className='footer'>

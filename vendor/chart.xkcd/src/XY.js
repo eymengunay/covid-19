@@ -127,7 +127,6 @@ class XY {
     const minY = Math.min(...allDataY)
     const maxY = Math.max(...allDataY)
     const marginY = Math.round((maxY - minY) / (100 / 5))
-    console.log(marginY)
     const yScale = scaleLinear()
       .domain([Math.min(...allDataY) - marginY, Math.max(...allDataY) + marginY])
       .range([this.height, 0]);
@@ -206,7 +205,8 @@ class XY {
       const theLine = line()
         .x((d) => xScale(d.x))
         .y((d) => yScale(d.y))
-        .curve(stepBefore);
+        .curve(monotoneX);
+      this.theLine = theLine
 
       graphPart.selectAll('.xkcd-chart-xyline')
         .data(this.data.datasets)
