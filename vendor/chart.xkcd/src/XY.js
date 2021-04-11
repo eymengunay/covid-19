@@ -113,7 +113,7 @@ class XY {
 
     const minX = Math.min(...allDataX)
     const maxX = Math.max(...allDataX)
-    const marginX = Math.round((maxX - minX) / 20)
+    const marginX = Math.round((maxX - minX) / (100 / 5))
     let xScale = scaleLinear()
       .domain([Math.min(...allDataX), Math.max(...allDataX)])
       .range([0, this.width]);
@@ -124,8 +124,12 @@ class XY {
         .range([0, this.width]);
     }
 
+    const minY = Math.min(...allDataY)
+    const maxY = Math.max(...allDataY)
+    const marginY = Math.round((maxY - minY) / (100 / 5))
+    console.log(marginY)
     const yScale = scaleLinear()
-      .domain([Math.min(...allDataY), Math.max(...allDataY)])
+      .domain([Math.min(...allDataY) - marginY, Math.max(...allDataY) + marginY])
       .range([this.height, 0]);
     
     const yScale100 = scaleLinear()
@@ -234,7 +238,7 @@ class XY {
       .enter()
       .append('line')
       .attr('x1', d => xScale(d.x))
-      .attr('y1', 0)
+      .attr('y1', 10)
       .attr('x2', d => xScale(d.x))
       .attr('y2', this.height)
       .attr('stroke', stroke)
