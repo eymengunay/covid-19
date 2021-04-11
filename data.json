@@ -1,0 +1,39 @@
+{
+  "lastUpdatedAt": "2021-04-11T13:11:00Z",
+  "antibodyUnit": "AU/mL",
+  "timeline": [
+    {
+      "location": "Belgrade",
+      "date": "2021-04-12T07:45:00Z",
+      "type": "vaccine",
+      "vaccine": "Pfizer-BioNTech",
+      "notes": "Second dose"
+    },
+    {
+      "location": "Belgrade",
+      "date": "2021-04-11T10:43:00Z",
+      "type": "antibody",
+      "value": 293
+    },
+    {
+      "location": "Istanbul",
+      "date": "2021-04-05T08:16:00Z",
+      "type": "antibody",
+      "value": 94.3
+    },
+    {
+      "location": "Belgrade",
+      "date": "2021-03-22T10:30:00Z",
+      "type": "vaccine",
+      "vaccine": "Pfizer-BioNTech",
+      "notes": "First dose"
+    },
+    {
+      "location": "Belgrade",
+      "date": "2021-03-22T10:30:00Z",
+      "type": "antibody",
+      "value": 0,
+      "notes": "I had no recent antibody tests at the time of the first vaccination and the closest one was from 2-3 months prior. Around this time though I had different tests (PCR & antigen) and they were all negative. So I have created this fake data point and assumed it to be zero."
+    }
+  ]
+}

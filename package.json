@@ -1,0 +1,33 @@
+{
+  "name": "@eymengunay/covid-19",
+  "version": "0.1.0",
+  "description": "A simple static interface for visualizing personal covid-19 related events.",
+  "scripts": {
+    "start": "npm run serve",
+    "build": "parcel build src/index.html",
+    "watch": "parcel watch src/index.html",
+    "serve": "parcel serve src/index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Eymen Gunay <eymen@egunay.com>",
+  "license": "ISC",
+  "dependencies": {
+    "chart.xkcd": "^1.1.13",
+    "csv-parse": "^4.15.3",
+    "moment": "^2.29.1",
+    "node-fetch": "^2.6.1",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-moment": "^1.1.1"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5",
+    "parcel-plugin-static-files-copy": "^2.6.0"
+  },
+  "staticFiles": {
+    "staticPath": [
+      "data.json"
+    ]
+  }
+}

@@ -1,0 +1,103 @@
+@font-face {
+  font-family: 'xkcd-script';
+  src: url('fonts/xkcd-script.woff2') format('woff2'),
+       url('fonts/xkcd-script.woff') format('woff'),
+       url('fonts/xkcd-script.ttf')  format('truetype');
+}
+
+/* reset */
+body {
+  font-family: 'xkcd-script', serif;
+}
+
+a {
+  color: #259AD3;
+}
+
+a:visited {
+  color: #4B057B;
+}
+
+.app {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* header */
+.app .header {
+  margin: 1rem 0 2rem;
+}
+
+.app .header img,
+.app .header h1 {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.app .header img {
+  height: 4rem;
+}
+
+.app .header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+/* content */
+.app .content table {
+  width: 100%;
+}
+
+.app .content table tr th,
+.app .content table tr td {
+  padding: 1rem;
+  box-shadow: 20px 38px 34px -26px hsla(0,0%,0%,.2);
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  border: solid 2px #41403E;
+}
+
+.app .content table tr th {
+  background-color: #000;
+  color: #fff;
+  border-color: #fff;
+}
+
+.app .content table time {
+  border-bottom: 2px dotted #999;
+  cursor: help;
+}
+
+/* footer */
+.app .footer {
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.app .footer p {
+  margin: 0;
+  display: block;
+}
+
+.app .footer ul {
+  display: block;
+  padding: 0;
+  list-style: none;
+  list-style-type: none;
+  margin: 1rem auto;
+}
+
+.app .footer ul li {
+  padding: 0 .5rem;
+  display: inline-block;
+}
+
+.app .footer ul li a {
+  text-decoration: dashed !important;
+}
+
+@media only screen and (max-width: 600px) {
+  .app {
+    max-width: 95%;
+  }
+}
