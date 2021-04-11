@@ -24,7 +24,7 @@ function App (props) {
     <div className='app'>
       <div className='header'>
         <img src={virus} />
-        <h1>Personal Covid19 Tracker</h1>
+        <h1>Personal Covid-19 Tracker</h1>
       </div>
 
       <div className='content'>
