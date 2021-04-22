@@ -4,6 +4,12 @@
   "timeline": [
     {
       "location": "Belgrade",
+      "date": "2021-04-22T14:03:00Z",
+      "type": "antibody",
+      "value": 4600
+    },
+    {
+      "location": "Belgrade",
       "date": "2021-04-12T07:45:00Z",
       "type": "vaccine",
       "vaccine": "Pfizer-BioNTech",
