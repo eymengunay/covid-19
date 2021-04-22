@@ -1,5 +1,5 @@
 import line from 'd3-shape/src/line';
-import { stepBefore } from 'd3-shape/src/curve/step';
+import { monotoneX } from 'd3-shape/src/curve/monotone';
 import select from 'd3-selection/src/select';
 import scaleLinear from 'd3-scale/src/linear';
 import scaleTime from 'd3-scale/src/time';
@@ -204,7 +204,7 @@ class XY {
       const theLine = line()
         .x((d) => xScale(d.x))
         .y((d) => yScale(d.y))
-        .curve(stepBefore);
+        .curve(monotoneX);
       this.theLine = theLine
 
       graphPart.selectAll('.xkcd-chart-xyline')
