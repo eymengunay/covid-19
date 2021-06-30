@@ -26,7 +26,6 @@ function Chart (props) {
         }
       }]
     }
-    
     // fill antibody dataset
     data.datasets[0].data = props.data.timeline
       .filter(entry => entry.type === 'antibody')
@@ -48,7 +47,12 @@ function Chart (props) {
           vaccine: entry.vaccine
         }
       })
-
+    
+    const values = props.data.timeline.filter(({ type }) => type === 'antibody').map(({ value }) => value).reverse()
+    const last = values[values.length - 1]
+    const max = Math.max(...values)
+    const position = last < max ? 'upRight' : 'upLeft'
+    
     const xkcd = new chartXKCD.XY(ref.current, {
       title: props.title,
       xLabel: 'Timestamp',
@@ -59,7 +63,7 @@ function Chart (props) {
         height: 400,
         xTickCount: 3,
         yTickCount: 4,
-        legendPosition: chartXKCD.config.positionType.upRight,
+        legendPosition: chartXKCD.config.positionType[position],
         timeFormat: 'MMM DD, YYYY',
         dotSize: 1.5
       }
