@@ -30,6 +30,10 @@ Or to build files into `dist` folder:
 npm run build
 ```
 
+## Notes
+
+This project is currently using a modified version chart.xkcd. You can find the dependency inside `vendor` folder. I quickly put together some changes to make things work but it is a mess. I hope to update this sometime in the future. 
+
 [standard-badge]: https://img.shields.io/badge/code_style-standard-brightgreen.svg?style=popout
 [standard-url]: https://standardjs.com
 [node-url]: https://nodejs.org
