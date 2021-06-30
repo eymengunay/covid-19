@@ -168,7 +168,7 @@ class XY {
       select(nodes[i])
         .attr('r', dotHoverSize);
       const tipX = xScale(d.x) + margin.left + 5;
-      const tipY = yScale(d.y) + margin.top + 5;
+      const tipY = (d.vaccine ? yScale100(d.y) : yScale(d.y)) + margin.top + 5;
       let tooltipPositionType = config.positionType.downRight;
       if (tipX > this.width / 2 && tipY < this.height / 2) {
         tooltipPositionType = config.positionType.downLeft;

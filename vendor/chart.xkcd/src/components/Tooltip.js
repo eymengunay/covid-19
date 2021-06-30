@@ -156,7 +156,8 @@ class Tooltip {
       || this.position.type === config.positionType.downRight) {
       return this.position.x;
     }
-    return this.position.x - this._getBackgroundWidth() - 20;
+    let x = this.position.x - this._getBackgroundWidth() - 20;
+    return Math.max(0, x)
   }
 
   _getUpLeftY() {
@@ -164,7 +165,8 @@ class Tooltip {
       || this.position.type === config.positionType.downRight) {
       return this.position.y;
     }
-    return this.position.y - this._getBackgroundHeight() - 20;
+    let y = this.position.y - this._getBackgroundHeight() - 20;
+    return Math.max(0, y)
   }
 }
 

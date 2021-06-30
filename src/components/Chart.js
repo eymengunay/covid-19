@@ -59,7 +59,7 @@ function Chart (props) {
         height: 400,
         xTickCount: 3,
         yTickCount: 4,
-        legendPosition: chartXKCD.config.positionType.upLeft,
+        legendPosition: chartXKCD.config.positionType.upRight,
         timeFormat: 'MMM DD, YYYY',
         dotSize: 1.5
       }
