@@ -1,7 +1,13 @@
 {
-  "lastUpdatedAt": "2021-08-05T07:45:00Z",
+  "lastUpdatedAt": "2021-09-02T10:18:00Z",
   "antibodyUnit": "AU/mL",
   "timeline": [
+    {
+      "location": "Belgrade",
+      "date": "2021-09-02T10:18:00Z",
+      "type": "antibody",
+      "value": 629
+    },
     {
       "location": "Istanbul",
       "date": "2021-08-05T07:45:00Z",
