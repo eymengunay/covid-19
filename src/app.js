@@ -45,7 +45,7 @@ function App (props) {
             {data.timeline.filter(({ type }) => type === 'vaccine').reverse().map((entry, index) => (
               <tr key={`vaccine-index-${index}`}>
                 <th>Vaccination {entry.notes ? `(${entry.notes})` : ''}</th>
-                <td><Moment withTitle format='LL'>{entry.date}</Moment></td>
+                <td><Moment withTitle format='MMM DD, YYYY'>{entry.date}</Moment></td>
               </tr>
             ))}
           </tbody>
