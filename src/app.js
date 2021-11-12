@@ -56,14 +56,14 @@ function App (props) {
       </div>
 
       <div className='qr'>
-        <a target='_blank' href={data.certificate}><QRCode size={160} value={data.certificate} /></a>
-        <a target='_blank' href={data.certificate} class='alttext'>COVID Certificate</a>
+        <a target='_blank' href={data.certificateLink}><QRCode size={160} value={data.certificateLink} /></a>
+        <a target='_blank' href={data.certificateLink} className='alttext'>COVID Certificate</a>
       </div>
 
       <div className='footer'>
         <p>* Timeline data is also available in JSON format at: <a href='/data.json' target='_blank'>{`${window.location.protocol}//${window.location.host}/data.json`}</a></p>
         <ul>
-          <li><a href={data.homepage}>Home</a></li>
+          <li><a href={data.homepageLink}>Home</a></li>
           <li>|</li>
           <li><a href='https://github.com/eymengunay/covid-19' target='_blank'>Repository</a></li>
           <li>|</li>
