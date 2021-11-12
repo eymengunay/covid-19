@@ -69,6 +69,23 @@ a:visited {
   cursor: help;
 }
 
+/* qr */
+.app .qr {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.app .qr svg {
+  display: inline-block;
+}
+
+.app .qr .alttext {
+  display: block;
+  font-size: .75rem;
+  color: #777;
+  text-decoration: none;
+}
+
 /* footer */
 .app .footer {
   margin: 1rem 0;

@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import Moment from 'react-moment'
+import QRCode from 'react-qr-code'
 
 // components
 import Chart from './components/Chart'
@@ -54,9 +55,16 @@ function App (props) {
         <Chart title='Antibody Timeline' data={data} />
       </div>
 
+      <div className='qr'>
+        <a target='_blank' href='https://covid19.egunay.com/certificate'><QRCode size={160} value='https://covid19.egunay.com/certificate' /></a>
+        <a target='_blank' href='https://covid19.egunay.com/certificate' class='alttext'>COVID Certificate</a>
+      </div>
+
       <div className='footer'>
         <p>* Timeline data is also available in JSON format at: <a href='/data.json' target='_blank'>{`${window.location.protocol}//${window.location.host}/data.json`}</a></p>
         <ul>
+          <li><a href='https://egunay.com'>Home</a></li>
+          <li>|</li>
           <li><a href='https://github.com/eymengunay/covid-19' target='_blank'>Repository</a></li>
           <li>|</li>
           <li><a href='/data.json' target='_blank'>JSON API</a></li>
