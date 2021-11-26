@@ -48,11 +48,6 @@ function Chart (props) {
         }
       })
     
-    const values = props.data.timeline.filter(({ type }) => type === 'antibody').map(({ value }) => value).reverse()
-    const last = values[values.length - 1]
-    const max = Math.max(...values)
-    const position = last < max ? 'upRight' : 'upLeft'
-    
     const xkcd = new chartXKCD.XY(ref.current, {
       title: props.title,
       xLabel: 'Timestamp',
@@ -63,7 +58,7 @@ function Chart (props) {
         height: 400,
         xTickCount: 3,
         yTickCount: 4,
-        legendPosition: chartXKCD.config.positionType[position],
+        legendPosition: chartXKCD.config.positionType.upLeft,
         timeFormat: 'MMM DD, YYYY',
         dotSize: 1.5
       }
