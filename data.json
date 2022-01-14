@@ -1,9 +1,15 @@
 {
-  "lastUpdatedAt": "2021-11-26T09:20:00Z",
+  "lastUpdatedAt": "2022-01-14T15:45:00Z",
   "antibodyUnit": "AU/mL",
   "homepageLink": "https://egunay.com",
   "certificateLink": "https://covid19.egunay.com/certificate",
   "timeline": [
+    {
+      "location": "Belgrade",
+      "date": "2022-01-14T15:45:00Z",
+      "type": "antibody",
+      "value": 6390
+    },
     {
       "location": "Belgrade",
       "date": "2021-11-26T09:20:00Z",
