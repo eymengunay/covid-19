@@ -1,9 +1,15 @@
 {
-  "lastUpdatedAt": "2022-02-22T05:00:00Z",
+  "lastUpdatedAt": "2022-04-15T09:00:00Z",
   "antibodyUnit": "AU/mL",
   "homepageLink": "https://egunay.com",
   "certificateLink": "https://covid19.egunay.com/certificate",
   "timeline": [
+    {
+      "location": "Belgrade",
+      "date": "2022-04-15T09:00:00Z",
+      "type": "antibody",
+      "value": 3127
+    },
     {
       "location": "Istanbul",
       "date": "2022-02-22T05:00:00Z",
