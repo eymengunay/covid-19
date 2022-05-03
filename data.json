@@ -1,9 +1,16 @@
 {
-  "lastUpdatedAt": "2022-04-15T09:00:00Z",
+  "lastUpdatedAt": "2022-05-03T15:30:00Z",
   "antibodyUnit": "AU/mL",
   "homepageLink": "https://egunay.com",
   "certificateLink": "https://covid19.egunay.com/certificate",
   "timeline": [
+        {
+      "location": "Belgrade",
+      "date": "2022-05-03T15:30:00Z",
+      "type": "vaccine",
+      "vaccine": "Pfizer-BioNTech",
+      "notes": "Fourth dose"
+    },
     {
       "location": "Belgrade",
       "date": "2022-04-15T09:00:00Z",
